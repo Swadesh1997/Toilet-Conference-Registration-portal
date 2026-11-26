@@ -1,0 +1,41 @@
+# Secrets
+.env
+*.env.local
+
+# Third-party libraries (installed by scripts/install-libs.sh)
+backend/api/PHPMailer/
+backend/admin/PHPMailer/
+backend/api/PHPMailer.php
+backend/api/SMTP.php
+backend/api/Exception.php
+backend/admin/PHPMailer.php
+backend/admin/SMTP.php
+backend/admin/Exception.php
+backend/admin/phpqrcode/
+backend/admin/vendor/
+
+# Licensed UI templates (not redistributable)
+frontend/public/assets/
+backend/admin/css/
+backend/admin/js/
+backend/admin/icons/
+backend/admin/images/
+
+# Uploaded personal documents and generated files. Never commit these.
+backend/passport/*
+backend/student/*
+backend/proof/*
+!backend/passport/.gitkeep
+!backend/student/.gitkeep
+!backend/proof/.gitkeep
+*.sql.gz
+*.dump
+
+# Node / build
+frontend/node_modules/
+frontend/build/
+
+# OS
+.DS_Store
+backend/user_invoice/qr/*
+!backend/user_invoice/qr/.gitkeep
